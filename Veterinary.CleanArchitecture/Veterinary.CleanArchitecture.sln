@@ -1,8 +1,40 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Veterinary.CleanArchitecture.WebAPI", "Veterinary.CleanArchitecture.WebAPI\Veterinary.CleanArchitecture.WebAPI.csproj", "{09EC7260-68D6-490A-BDCD-42A430F1DDAA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Veterinary.CleanArchitecture.Application", "Veterinary.CleanArchitecture.Application\Veterinary.CleanArchitecture.Application.csproj", "{4E4AF0C5-85B3-4678-B003-28A596B6E8FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Veterinary.CleanArchitecture.Domain", "Veterinary.CleanArchitecture.Domain\Veterinary.CleanArchitecture.Domain.csproj", "{7F7EF013-2F2D-44E5-A71A-BB109D52DCE2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Veterinary.CleanArchitecture.Infrastructure", "Veterinary.CleanArchitecture.Infrastructure\Veterinary.CleanArchitecture.Infrastructure.csproj", "{CF871018-BBB7-48B1-B339-E0F4E4D404B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Veterinary.CleanArchitecture.Tests", "Veterinary.CleanArchitecture.Tests\Veterinary.CleanArchitecture.Tests.csproj", "{594E64DE-E383-4908-9D0E-F8B3C40244CE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{09EC7260-68D6-490A-BDCD-42A430F1DDAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09EC7260-68D6-490A-BDCD-42A430F1DDAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09EC7260-68D6-490A-BDCD-42A430F1DDAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09EC7260-68D6-490A-BDCD-42A430F1DDAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E4AF0C5-85B3-4678-B003-28A596B6E8FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E4AF0C5-85B3-4678-B003-28A596B6E8FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E4AF0C5-85B3-4678-B003-28A596B6E8FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E4AF0C5-85B3-4678-B003-28A596B6E8FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F7EF013-2F2D-44E5-A71A-BB109D52DCE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F7EF013-2F2D-44E5-A71A-BB109D52DCE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F7EF013-2F2D-44E5-A71A-BB109D52DCE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F7EF013-2F2D-44E5-A71A-BB109D52DCE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF871018-BBB7-48B1-B339-E0F4E4D404B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF871018-BBB7-48B1-B339-E0F4E4D404B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF871018-BBB7-48B1-B339-E0F4E4D404B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF871018-BBB7-48B1-B339-E0F4E4D404B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{594E64DE-E383-4908-9D0E-F8B3C40244CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{594E64DE-E383-4908-9D0E-F8B3C40244CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{594E64DE-E383-4908-9D0E-F8B3C40244CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{594E64DE-E383-4908-9D0E-F8B3C40244CE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
