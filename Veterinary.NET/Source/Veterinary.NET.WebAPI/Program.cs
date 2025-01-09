@@ -4,19 +4,15 @@ using Veterinary.NET.Application;
 using Microsoft.AspNetCore.Identity;
 
 var builder = WebApplication.CreateBuilder(args);
-var app = builder.Build();
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddInfrastructure(builder.Configuration).AddApplication();
 builder.Services.AddAuthorization();
-builder.Services.AddIdentityApiEndpoints<IdentityUser>().AddEntityFrameworkStores<VeterinaryContext>();
-
-if (app.Environment.IsDevelopment())
+builder.Services.AddIdentityApiEndpoints<IdentityUser>().AddEntityFrameworkStores<IdentityContext>();
+if (builder.Environment.IsDevelopment())
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
     builder.Services.Configure<IdentityOptions>(options =>
     {
         options.SignIn.RequireConfirmedAccount = false;
@@ -24,6 +20,14 @@ if (app.Environment.IsDevelopment())
         options.SignIn.RequireConfirmedPhoneNumber = false;
     });
 }
+
+var app = builder.Build();
+
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI();
+}else{}
 
 app.UseHttpsRedirection();
 app.MapIdentityApi<IdentityUser>();
