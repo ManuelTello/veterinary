@@ -8,11 +8,11 @@ using Veterinary.NET.Infrastructure.Persistence.Contexts;
 
 #nullable disable
 
-namespace Veterinary.NET.Infrastructure.Persistence.Migrations
+namespace Veterinary.NET.Infrastructure.Persistence.Migrations.Identity
 {
-    [DbContext(typeof(VeterinaryContext))]
-    [Migration("20250105211510_InitialDB")]
-    partial class InitialDB
+    [DbContext(typeof(IdentityContext))]
+    [Migration("20250108175548_InitialIdentity")]
+    partial class InitialIdentity
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

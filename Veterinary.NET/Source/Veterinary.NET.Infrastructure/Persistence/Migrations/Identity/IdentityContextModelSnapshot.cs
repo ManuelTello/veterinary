@@ -7,10 +7,10 @@ using Veterinary.NET.Infrastructure.Persistence.Contexts;
 
 #nullable disable
 
-namespace Veterinary.NET.Infrastructure.Persistence.Migrations
+namespace Veterinary.NET.Infrastructure.Persistence.Migrations.Identity
 {
-    [DbContext(typeof(VeterinaryContext))]
-    partial class VeterinaryContextModelSnapshot : ModelSnapshot
+    [DbContext(typeof(IdentityContext))]
+    partial class IdentityContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
         {

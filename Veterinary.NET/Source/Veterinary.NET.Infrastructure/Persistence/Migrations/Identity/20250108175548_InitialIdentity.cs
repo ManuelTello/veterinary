@@ -3,10 +3,10 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace Veterinary.NET.Infrastructure.Persistence.Migrations
+namespace Veterinary.NET.Infrastructure.Persistence.Migrations.Identity
 {
     /// <inheritdoc />
-    public partial class InitialDB : Migration
+    public partial class InitialIdentity : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

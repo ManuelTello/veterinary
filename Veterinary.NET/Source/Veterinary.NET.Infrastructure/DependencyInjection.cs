@@ -18,11 +18,16 @@ namespace Veterinary.NET.Infrastructure
         {
             var connectionString = configuration.GetConnectionString("ApplicationConnection") ?? throw new NullReferenceException();
 
-            services.AddDbContext<VeterinaryContext>(options =>
+            services.AddDbContext<IdentityContext>(options =>
             {
                 options.UseSqlite(connectionString);
             });
 
+            services.AddDbContext<ApplicationContext>(options =>
+            {
+                options.UseSqlite(connectionString);
+            });
+            
             return services;
         }
     }

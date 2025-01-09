@@ -4,9 +4,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Veterinary.NET.Infrastructure.Persistence.Contexts
 {
-    public class VeterinaryContext:IdentityDbContext<IdentityUser>
+    public class IdentityContext:IdentityDbContext<IdentityUser>
     {
-        public VeterinaryContext(DbContextOptions<VeterinaryContext> options):base(options){} 
+        public IdentityContext(DbContextOptions<IdentityContext> options):base(options){} 
     }
 }
 
