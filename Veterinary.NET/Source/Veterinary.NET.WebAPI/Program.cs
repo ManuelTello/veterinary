@@ -30,7 +30,7 @@ if (app.Environment.IsDevelopment())
 }else{}
 
 app.UseHttpsRedirection();
-app.MapIdentityApi<IdentityUser>();
+app.MapGroup("/identity").MapIdentityApi<IdentityUser>();
 app.UseAuthorization();
 app.MapControllers();
 app.Run();
